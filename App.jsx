@@ -1,11 +1,11 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './Pages/Home';
-import Create from './Pages/components/create';
+import Create from './Pages/components/Create';
 import Edit from './Pages/components/Edit';
 import Blog from './Pages/Blog';
 import LearningUseState  from './Pages/components/Learningusestate';
 import Single from './Pages/components/Single';
-
+import Editage from './Pages/components/Editage';
 
 
 function App() {
@@ -23,6 +23,8 @@ function App() {
       <Route path="#" element={<Edit />} />
       <Route path='/edit' element={<Edit/>}/>
       <Route path='/Single/:id' element={<Single/>}/>
+      <Route path='/Editage' element={<Editage/>}/>
+      
 
       <Route path='/LearningUseState' element={<LearningUseState/>} />
 
